@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; configuration.title = "Forgot Password?"; ObjectID = "71j-pZ-RzO"; */
+"71j-pZ-RzO.configuration.title" = "Şifremi Unuttum?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "71j-pZ-RzO"; */
+"71j-pZ-RzO.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "Eyx-Fb-RAd"; */
+"Eyx-Fb-RAd.text" = "Şifre";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "Ijc-Kf-94C"; */
+"Ijc-Kf-94C.text" = "Giriş";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "YGG-ou-7q4"; */
+"YGG-ou-7q4.configuration.title" = "Giriş";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YGG-ou-7q4"; */
+"YGG-ou-7q4.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "      Enter Password"; ObjectID = "ilK-bX-xbz"; */
+"ilK-bX-xbz.placeholder" = "      Şifreni gir";
+
+/* Class = "UITextField"; placeholder = "      Enter Username"; ObjectID = "l2C-Gf-Bdk"; */
+"l2C-Gf-Bdk.placeholder" = "      Kullanıcı Adını gir";
+
+/* Class = "UILabel"; text = "Enter the required information to continue"; ObjectID = "oJ1-as-l4Q"; */
+"oJ1-as-l4Q.text" = "Devam etmek için gerekli bilgileri gir";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "zaV-IB-cg0"; */
+"zaV-IB-cg0.text" = "Kullanıcı Adi";
