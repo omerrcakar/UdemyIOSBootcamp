@@ -34,8 +34,10 @@ class Anasayfa: UIViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetay"{
+            // gönderilen kişiyi any den Kisiler tipine dönüştürdük
             if let kisi = sender as? Kisiler{
                 let gidilecekYer = segue.destination as! KisiDetay
+                // öteki sayfadaki kişiye buradaki gelen kişiyi atadık
                 gidilecekYer.kisi = kisi
             }
         }
@@ -66,20 +68,27 @@ extension Anasayfa:UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        // gelen indexe göre gelen kişiyi aldık
         let kisi = kisilerListesi[indexPath.row]
         
+        // her bir hücreyi bağladık kişiler hücre sınıfından
         let hucre = tableView.dequeueReusableCell(withIdentifier: "kisilerhucre") as! KisilerHucre
         
+        // o hücredeki labellara gelen kişinin değerlerini atıyoruz
         hucre.labelKisiAd.text = kisi.kisi_ad
         hucre.labelKisiTel.text = kisi.kisi_tel
         
         return hucre
     }
     
+    // seçilen hücre
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // seçilen satırdaki kişi özelliklerini alıcak
         let kisi = kisilerListesi[indexPath.row]
-        performSegue(withIdentifier: "toDetay", sender: kisi)
+        
+        // tıklayınca segue
+        performSegue(withIdentifier: "toDetay", sender: kisi) // tıklanan kişi yi göndericek diğer sayfaya
         tableView.deselectRow(at: indexPath, animated: true) // seçili kalmayı kaldırdı
     }
     
